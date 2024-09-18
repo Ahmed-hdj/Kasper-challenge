@@ -1,0 +1,1257 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "open SANS", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body>div {
+    margin-bottom: 65px;
+}
+
+.first {
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    position: relative;
+    background-image: url(https://images.unsplash.com/photo-1448375240586-882707db888b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+}
+
+.first .container {
+
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    position: relative;
+
+}
+
+.container {
+    width: 77%;
+}
+
+
+@media (max-width:1230px) {
+    .container {
+        width: 95%;
+    }
+
+}
+
+.first .container::after {
+    content: "";
+    background-color: white;
+    width: 99%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    color: white;
+}
+
+.first i:first-child {
+    display: none;
+    color: white;
+}
+
+
+
+a {
+    text-decoration: unset;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.first div>i:last-child {
+    color: white;
+    border-left: solid 1px;
+    font-size: 13px;
+    padding-top: 2px;
+    padding-left: 19px;
+}
+
+.first .container div {
+    display: flex;
+    gap: 109px;
+}
+
+img[alt=logo] {
+    width: 138px;
+    filter: invert(1) hue-rotate(178deg) brightness(2.5);
+}
+
+.first .container+div {
+
+    background-color: rgb(15 118 145 / 70%);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    gap: 19px;
+    color: white;
+    width: 55%;
+
+}
+
+.first .container+div div p,
+.again p:first-child {
+    font-weight: 700;
+    font-size: 35px;
+}
+
+@media (max-width:900px) {
+    .first .container+div {
+        width: 75%;
+    }
+
+
+}
+
+@media (max-width:1330px) {
+    .first .container+div div p {
+        font-size: 27px;
+    }
+}
+
+@media(max-width:550px) {
+    .first .container+div {
+        width: 92%;
+    }
+
+    .first .container+div p {
+        font-size: 15px !important;
+    }
+
+    .first .container::after {
+        width: 97%;
+    }
+
+}
+
+.first .container+div div {
+    padding-top: 40px;
+}
+
+.first .container+div>p {
+    padding-bottom: 40px;
+}
+
+
+
+
+.first .container+div>* {
+    width: 63%;
+    padding-right: 32px;
+}
+
+
+
+.first>div:last-child div {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-bottom: 10px;
+}
+
+.first>div:last-child {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.first>div:last-child div:nth-child(2) {
+    background-color: #19c8fa;
+}
+
+.first::after {
+    content: "\f053";
+    position: absolute;
+    left: 15px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    top: 50%;
+    font-size: 28px;
+    color: white;
+}
+
+.first::before {
+    content: "\f054";
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    right: 15px;
+    top: 50%;
+    font-size: 28px;
+    color: white;
+}
+
+@media (max-width:950px) {
+    .first i:first-child {
+        display: block;
+    }
+
+    .first ul {
+        display: none;
+    }
+
+    .first ul li {
+        padding-left: 5px;
+        padding-bottom: 5px;
+    }
+
+    .first .container div {
+        gap: 40px;
+    }
+
+    .first i:first-child:hover+ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: -330px;
+        background-color: rgba(0, 0, 0, 0.651);
+        width: 100px;
+        right: 20px;
+
+
+    }
+
+    .first i:first-child:hover+ul li:not(li:last-child) {
+        border-bottom: white solid 1px;
+    }
+}
+
+.first ul a:hover {
+    text-decoration: underline;
+    text-underline-offset: 28px;
+    text-decoration-thickness: 1px;
+    color: #19c8fa;
+    position: relative;
+    z-index: 1;
+}
+
+
+.second {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.again p {
+    text-align: center;
+}
+
+.again p:last-child {
+    max-width: 533px;
+    position: relative;
+}
+
+hr {
+    width: 116px;
+    height: 4px;
+    background-color: #6f6767;
+    position: relative;
+}
+
+.again * {
+    margin: 0 auto 20px;
+}
+
+.again p:last-child::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: solid 1px #6f6767;
+    background-color: white;
+    position: absolute;
+    left: 48.3%;
+    top: -31px;
+
+
+}
+
+
+
+.second .container>div:last-child {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    column-gap: 65px;
+}
+
+
+
+.one {
+    display: flex;
+    gap: 45px;
+}
+
+.one div p:first-child {
+    font-size: 20px;
+    color: #19c8fa;
+    margin-bottom: 15px;
+}
+
+.second .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.one div p:last-child {
+    margin-bottom: 60px;
+}
+
+.one i {
+    padding-top: 15px;
+}
+
+@media (max-width:930px) {
+    .second .container>div:last-child {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media(max-width:450px) {
+
+    .one {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .one div p {
+        text-align: center;
+    }
+}
+
+.third {
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/014/015/918/original/night-in-mountain-forest-with-deer-on-the-hill-moon-and-stars-night-landscape-vector.jpg);
+    background-size: cover;
+
+    height: 521px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.third div {
+    background-color: rgb(15 118 145 / 70%);
+    ;
+    align-self: center;
+    width: 47%;
+}
+
+.third img {
+    height: 472px;
+    position: absolute;
+    left: 25%;
+    bottom: -60px;
+}
+
+.third div p,
+.third div ul {
+    padding-left: 44px;
+}
+
+.third div p {
+    padding-top: 47px;
+    padding-bottom: 35px;
+    font-size: 25px;
+    color: white;
+
+}
+
+.third ul li {
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.third ul li i {
+    padding-right: 23px;
+    font-size: 16px;
+}
+
+
+.third ul {
+    flex-direction: column;
+    padding-bottom: 45px;
+    gap: 9px;
+}
+
+@media (max-width:1400px) {
+    .third img {
+        left: 14%;
+    }
+}
+
+@media (max-width:1080px) {
+    .third img {
+        left: 4%;
+    }
+}
+
+@media (max-width:780px) {
+    .third img {
+        display: none;
+    }
+
+    .third div {
+        width: 100%;
+    }
+}
+
+.fourth ul {
+    color: black;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.fourth ul li,
+.fourth>div:last-child>p {
+    padding: 10px;
+}
+
+@media (max-width:429px) {
+    .fourth ul li {
+        padding: 5px;
+    }
+
+    .fourth ul {
+        gap: 19px;
+    }
+
+}
+
+.fourth ul li:first-child,
+.fourth>div:last-child>p {
+    background-color: #19c8fa;
+    color: white;
+}
+
+.fourth>div:last-child>p {
+    width: 105px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.images>div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    background-position: center;
+}
+
+.images>div:first-child {
+    background-image: url(https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/3/2024/01/EWG_2017.7.16-109_137812891_222523831-630x420.jpg);
+}
+
+.images>div:nth-child(2) {
+    background-image: url(https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg);
+}
+
+.images>div:nth-child(3) {
+    background-image: url(https://i.natgeofe.com/n/3f2a2e55-47f9-4dda-9f03-bbbd4e9d343e/Trav%20Lake%20GettyImages-909708218.jpg);
+
+}
+
+.images>div:nth-child(4) {
+    background-image: url(https://cdn.futura-sciences.com/buildsv6/images/largeoriginal/9/7/7/97715a8a52_50220077_sahara-pluie.jpg);
+
+}
+
+.images>div:nth-child(5) {
+    background-image: url(https://www.thetreecenter.com/c/uploads/2014/09/Cherry_Blossoms_1-scaled.webp);
+}
+
+.images>div:nth-child(6) {
+    background-image: url(https://images.newscientist.com/wp-content/uploads/2020/12/21145328/volcanoes-f0r7pt_web.jpg);
+
+}
+
+.images>div:nth-child(7) {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/F5_tornado_Elie_Manitoba_2007.jpg/1200px-F5_tornado_Elie_Manitoba_2007.jpg);
+}
+
+.images>div:last-child {
+    background-image: url(https://www.sciline.org/wp-content/uploads/2021/02/cropped-Torrential-Rain-Flooding-and-Climate-Change.jpg);
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+@media (min-width:980px) and (max-width:1304px) {
+    .images {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:1400px) {
+    .images {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.images>div {
+    position: relative;
+}
+
+.images div div {
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition-duration: 0.4s;
+    transform: rotateX(90deg);
+    transform-origin: center bottom;
+
+}
+
+.images div div p:last-child {
+    color: #19c8fa;
+    padding: 0px 15px 10px;
+}
+
+.images div div p:first-child {
+    padding: 10px 15px;
+}
+
+.images>div:hover div {
+    transform: rotateX(0deg);
+}
+
+.images>div::before {
+    content: "\2b";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    display: none;
+    z-index: 2;
+    cursor: pointer;
+
+}
+
+.images>div::after {
+    content: "";
+    display: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(15 118 145 / 70%);
+    ;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    cursor: pointer;
+
+
+}
+
+
+
+.images>div:hover::after,
+.images>div:hover::before {
+    display: block;
+}
+
+
+
+.fifth {
+    position: relative;
+    height: 106vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fifth video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+}
+
+.fifth div {
+    background-color: rgb(15 118 145 / 70%);
+    color: white;
+    text-align: center;
+}
+
+.fifth div p {
+    margin: 35px auto;
+}
+
+.fifth div p:nth-child(2) {
+
+    font-size: 21px;
+}
+
+.fifth div p:first-child {
+    font-size: 40px;
+}
+
+.fifth div p:last-child {
+    width: 171px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    background-color: black;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.sixth {
+    height: 63vh;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: unset;
+}
+
+.sixth img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-55%);
+    max-width: 877px;
+    width: 100%;
+    bottom: -117px;
+}
+
+@media (max-width:700px) {
+    .sixth {
+        height: 48vh;
+    }
+}
+
+@media (max-width:450px) {
+    .sixth {
+        height: 38vh;
+    }
+
+    .sixth img {
+        bottom: -68px;
+    }
+}
+
+.seventh {
+    background-image: url(https://www.naturerelaxation.com/cdn/shop/files/glacierbg.jpg?v=1613677492);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.seventh div div p:nth-child(2) {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.seventh div div p:first-child {
+    background-image: url(https://www.pngall.com/wp-content/uploads/2016/04/Hexagon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 55px;
+    height: 63px;
+    margin: 10px auto 0;
+}
+
+.seventh p i {
+    padding-top: 27px;
+}
+
+.seventh>div {
+    background-color: rgb(15 118 145 / 70%);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    width: 70%;
+    margin: 132px 0;
+    gap: 20px 10px;
+
+}
+
+.seventh p {
+    text-align: center;
+}
+
+.seventh p:last-child {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+@media (min-width:975px) and (max-width:1314px) {
+    .seventh>div {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+.area>p,
+.area2>p {
+    text-align: center;
+}
+
+.area>p:first-child,
+.area2>p:first-child {
+    font-size: 30px;
+}
+
+.area>p:nth-child(2),
+.area2>p:nth-child(2) {
+    max-width: 525px;
+    color: #8b8787;
+    margin: 23px auto 70px;
+}
+
+.area img {
+    border-radius: 50%;
+    width: 107px;
+    height: 115px;
+}
+
+.area div p:first-child {
+    max-width: 395px;
+    padding-bottom: 30px;
+}
+
+.area div p:last-child {
+    color: #8b8787;
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+}
+
+.area>div {
+    display: flex;
+    gap: 62px;
+    justify-content: center;
+    margin-bottom: 85px;
+}
+
+.area>div:nth-child(4) {
+    margin-bottom: 55px;
+}
+
+.area div div {
+    border-bottom: solid 2px gray;
+    position: relative;
+
+}
+
+
+
+.area li {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: solid 1px black;
+}
+
+.area ul {
+    gap: 5px;
+    justify-content: center;
+}
+
+.area li:nth-child(2) {
+    background-color: #19c8fa;
+}
+
+.area2 div div {
+    height: 30px;
+    background-color: gray;
+    position: relative;
+}
+
+.area2 div div::before {
+    content: "";
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: #19c8fa;
+}
+
+
+.area2>div:first-of-type div::before,
+.area2>div:last-child div::before {
+    width: 90%;
+}
+
+.area2>div:nth-child(4) div::before {
+    width: 85%;
+}
+
+.area2>div:nth-child(5) div::before {
+    width: 80%;
+}
+
+.area2 div p:nth-child(2) {
+    color: white;
+    background-color: black;
+    padding: 4px;
+    width: fit-content;
+    position: absolute;
+    top: -7px;
+    border-radius: 6px;
+
+}
+
+.area2>div:first-of-type p:nth-child(2),
+.area2>div:last-child p:nth-child(2) {
+    left: 86.5%;
+}
+
+.area2>div {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.area2 div p:first-child {
+    margin-bottom: 11px;
+}
+
+.area2>div:nth-child(4) p:nth-child(2) {
+    left: 81.5%;
+}
+
+.area2>div:nth-child(5) p:nth-child(2) {
+    left: 76.5%;
+}
+
+.area2 div div::after {
+    content: "";
+    border: 8px solid;
+    border-color: black transparent transparent transparent;
+    position: absolute;
+    top: -11px;
+}
+
+.area2>div:first-of-type div::after,
+.area2>div:last-child div::after {
+    left: 88.4%;
+}
+
+.area2>div:nth-child(4) div::after {
+    left: 83.4%;
+}
+
+.area2>div:nth-child(5) div::after {
+    left: 78.4%;
+}
+
+
+.eight {
+    display: flex;
+    justify-content: center;
+}
+
+.eight>div {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    width: 80%;
+    gap: 60px 110px;
+}
+
+@media (max-width:1080px) {
+    .eight>div {
+        width: 90%;
+    }
+}
+
+@media (max-width:960px) {
+    .area div div {
+        flex-grow: 0.7;
+    }
+}
+
+@media (max-width:440px) {
+    .area>div {
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .eight>div {
+        width: 96%;
+        grid-template-columns: 1fr;
+    }
+
+    .area div p:first-child {
+        text-align: center;
+    }
+}
+
+.nine {
+    background-image: url(https://d1jyxxz9imt9yb.cloudfront.net/medialib/4268/image/s768x1300/WC202209_LAST_006_430968_reduced.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.nine q {
+    text-transform: uppercase;
+    font-size: 27px;
+    max-width: 1114px;
+    display: block;
+    padding: 100px 0 14px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nine p,
+.nine q {
+    text-align: center;
+}
+
+.nine p {
+    padding-bottom: 78px;
+}
+
+.price div:first-child {
+    border: solid 1px;
+    border-color: #19c8fa transparent;
+}
+
+
+.price div:last-child {
+    border-top: solid 1px #19c8fa;
+}
+
+.price ul li:not(li:last-child) {
+    border-bottom: solid 1px #19c8fa;
+}
+
+.price ul {
+    color: black;
+    flex-direction: column;
+    align-items: center;
+    gap: unset;
+}
+
+.price ul li {
+    width: fit-content;
+    padding: 15px 0px;
+}
+
+.price div:first-child p {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.price div:first-child p:first-child {
+    padding-top: 20px;
+}
+
+.price div:first-child p:last-child {
+    font-size: 60px;
+    padding-bottom: 8px;
+    position: relative;
+    font-weight: 700;
+}
+
+.price div:last-child {
+    display: flex;
+    justify-content: center;
+}
+
+.price button {
+    width: 100px;
+    padding: 8px 0px;
+    border: 1px solid #19c8fa;
+    background-color: unset;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+
+.price div:first-child p:last-child::before {
+    content: "$";
+    position: absolute;
+    top: 11px;
+    left: -26px;
+    font-size: 22px;
+    font-weight: 400;
+
+}
+
+.price div:first-child p:last-child::after {
+    content: "/MO";
+    position: absolute;
+    bottom: 22px;
+    right: -34px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.price {
+    background-color: #fcfcfc;
+}
+
+.ten>div:last-of-type {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.ten .again p:last-child {
+    margin-bottom: 80px;
+}
+
+@media (min-width:1103px) {
+    .ten>div:last-of-type {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+@media (min-width:435px) and (max-width:760px) {
+    .ten>div:last-of-type {
+        width: 90%;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+.ten>p:not(p:last-child) {
+    text-align: center;
+    margin: 50px 0 30px;
+}
+
+.ten>p:last-child {
+    width: 105px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    cursor: pointer;
+    background-color: #19c8fa;
+    padding: 10px;
+    color: white;
+}
+
+.eleven {
+    background-image: url(https://img.passeportsante.net/1200x675/2019-07-26/i90318-.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.eleven div {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    padding: 86px 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.eleven input {
+    width: 100%;
+    height: 54px;
+    padding-left: 50px;
+    border: solid 1px white;
+    background-color: transparent;
+    outline: none;
+    caret-color: white;
+
+}
+
+.eleven input::placeholder {
+    color: white;
+}
+
+.eleven form::before {
+    content: "\f0e0";
+    position: absolute;
+    left: 20px;
+    top: 21px;
+    font-family: 'Font Awesome 5 Free';
+}
+
+.eleven form::after {
+    content: "SUBSCRIBE";
+    background-color: #19c8fa;
+    position: absolute;
+    width: 119px;
+    right: 1px;
+    top: 1px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.eleven p {
+    max-width: 630px;
+}
+
+.eleven form {
+    position: relative;
+    flex-grow: 1;
+    min-width: 325px;
+}
+
+@media (max-width:1407px) {
+    .eleven p {
+        max-width: unset;
+    }
+}
+
+@media (max-width:690px) {
+    .eleven div {
+        width: 90%;
+    }
+}
+
+.twelve ul {
+    flex-direction: column;
+    color: #8b8787;
+    gap: 5px;
+}
+
+.twelve p {
+    margin-bottom: 21px;
+}
+
+.twelve ul:first-of-type {
+    margin-bottom: 64px;
+}
+
+.twelve form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 63%;
+    max-width: 610px;
+    padding-left: 10px;
+}
+
+.twelve input,
+textarea {
+    padding: 16px;
+}
+
+.twelve input[type=submit] {
+    width: 140px;
+    background-color: #19c8fa;
+    color: white;
+    align-self: flex-end;
+    padding: 14px;
+    border: solid;
+    font-weight: 600;
+}
+
+textarea {
+    height: 190px;
+}
+
+.twelve>div:last-child {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap-reverse;
+
+}
+
+.twelve>div:last-child>div {
+    padding-right: 10px;
+}
+
+.twelve .again p:last-of-type {
+    margin-bottom: 70px;
+
+}
+
+@media (max-width:540px) {
+    .twelve form {
+        padding: unset;
+        width: 94%;
+    }
+}
+
+.thirt {
+    background-image: url(https://cdn.britannica.com/46/236546-138-E890CA13/did-you-know-lunar-phases-moon.jpg?w=800&h=450&c=crop);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    margin-bottom: unset;
+
+}
+
+.thirt img {
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 87px;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.thirt p {
+    text-align: center;
+    color: white;
+}
+
+.thirt span {
+    color: #19c8fa;
+}
+
+.thirt p:first-of-type {
+    font-size: 23px;
+    margin-bottom: 9px;
+}
+
+.thirt p:last-of-type {
+    padding-bottom: 25px;
+}
+
+.thirt ul {
+    justify-content: center;
+    margin: 10px 0 40px;
+}
+
+.thirt hr {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    height: 1px;
+    width: 224px;
+}
